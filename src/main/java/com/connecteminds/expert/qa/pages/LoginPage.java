@@ -26,6 +26,12 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//img[@alt='connectedminds-logo']")
 	WebElement logo;
 	
+	@FindBy(css="div[class='MuiBox-root jss96'] span[class='MuiButton-label']")
+	WebElement MDLogout;
+	
+	@FindBy(xpath="//span[normalize-space()='VERIFY']")
+	WebElement OTPVerify;
+	
 	//Initializing Page Object
 	public LoginPage() {
 		PageFactory.initElements(driver,this);
@@ -54,10 +60,13 @@ public class LoginPage extends TestBase{
 	}
 	
 	//Validating the Login Functionality
-	public HomePage login(String un, String pwd) {
+	public HomePage login(String un, String pwd) throws InterruptedException {
 		username.sendKeys(un);
 		password.sendKeys(pwd);
 		login.click();
+		//MDLogout.click();
+		Thread.sleep(30000);
+		OTPVerify.click();
 		return new HomePage();
 	}
 	
