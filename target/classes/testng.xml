@@ -3,8 +3,8 @@
 <suite name="Automating Expert.connectedminds">
 	<test name="Expert testcases">
 		<classes>
-			<class name="com.connectedminds.expert.qa.test.LoginPageTest">
-			</class>
+			<class name="com.connectedminds.expert.qa.test.LoginPageTest"></class>
+			<class name="com.connectedminds.expert.qa.test.HomePageTest"></class>
 		</classes>
 	</test>
 </suite>
