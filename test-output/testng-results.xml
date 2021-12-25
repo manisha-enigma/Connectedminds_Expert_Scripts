@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23675" started-at="2021-12-13T05:16:37Z" finished-at="2021-12-13T05:17:01Z">
+  <suite name="Default suite" duration-ms="40258" started-at="2021-12-25T12:15:03Z" finished-at="2021-12-25T12:15:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23675" started-at="2021-12-13T05:16:37Z" finished-at="2021-12-13T05:17:01Z">
-      <class name="com.connectedminds.expert.qa.test.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.connectedminds.expert.qa.test.LoginPageTest@3e4e87]" name="setUp" is-config="true" duration-ms="5960" started-at="2021-12-13T10:46:37Z" finished-at="2021-12-13T10:46:43Z">
+    <test name="Default test" duration-ms="40258" started-at="2021-12-25T12:15:03Z" finished-at="2021-12-25T12:15:43Z">
+      <class name="com.connectedminds.expert.qa.test.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.connectedminds.expert.qa.test.HomePageTest@9e7ee8]" name="setUp" is-config="true" duration-ms="36815" started-at="2021-12-25T17:45:03Z" finished-at="2021-12-25T17:45:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.connectedminds.expert.qa.test.LoginPageTest@3e4e87]" name="loginTest" duration-ms="848" started-at="2021-12-13T10:46:43Z" finished-at="2021-12-13T10:46:44Z">
+        <test-method status="PASS" signature="checkTrendingPageTest()[pri:0, instance:com.connectedminds.expert.qa.test.HomePageTest@9e7ee8]" name="checkTrendingPageTest" duration-ms="2621" started-at="2021-12-25T17:45:39Z" finished-at="2021-12-25T17:45:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.connectedminds.expert.qa.test.LoginPageTest@3e4e87]" name="teardown" is-config="true" duration-ms="855" started-at="2021-12-13T10:46:44Z" finished-at="2021-12-13T10:46:45Z">
+        </test-method> <!-- checkTrendingPageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.connectedminds.expert.qa.test.HomePageTest@9e7ee8]" name="tearDown" is-config="true" duration-ms="789" started-at="2021-12-25T17:45:42Z" finished-at="2021-12-25T17:45:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.connectedminds.expert.qa.test.LoginPageTest@3e4e87]" name="setUp" is-config="true" duration-ms="7671" started-at="2021-12-13T10:46:45Z" finished-at="2021-12-13T10:46:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logoAvailable()[pri:0, instance:com.connectedminds.expert.qa.test.LoginPageTest@3e4e87]" name="logoAvailable" duration-ms="89" started-at="2021-12-13T10:46:52Z" finished-at="2021-12-13T10:46:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoAvailable -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.connectedminds.expert.qa.test.LoginPageTest@3e4e87]" name="teardown" is-config="true" duration-ms="804" started-at="2021-12-13T10:46:53Z" finished-at="2021-12-13T10:46:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.connectedminds.expert.qa.test.LoginPageTest@3e4e87]" name="setUp" is-config="true" duration-ms="6539" started-at="2021-12-13T10:46:53Z" finished-at="2021-12-13T10:47:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.connectedminds.expert.qa.test.LoginPageTest@3e4e87]" name="loginPageTitleTest" duration-ms="8" started-at="2021-12-13T10:47:00Z" finished-at="2021-12-13T10:47:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.connectedminds.expert.qa.test.LoginPageTest@3e4e87]" name="teardown" is-config="true" duration-ms="870" started-at="2021-12-13T10:47:00Z" finished-at="2021-12-13T10:47:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.connectedminds.expert.qa.test.LoginPageTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.connectedminds.expert.qa.test.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
