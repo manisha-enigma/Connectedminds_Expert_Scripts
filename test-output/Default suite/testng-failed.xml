@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.connectedminds.expert.qa.test.HomePageTest">
+      <class name="com.connectedminds.expert.qa.test.LoginPageTest">
         <methods>
-          <include name="checkPodcastPageTest"/>
-          <include name="tearDown"/>
+          <include name="teardown"/>
           <include name="setUp"/>
+          <include name="loginNegativeTest"/>
         </methods>
-      </class> <!-- com.connectedminds.expert.qa.test.HomePageTest -->
+      </class> <!-- com.connectedminds.expert.qa.test.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

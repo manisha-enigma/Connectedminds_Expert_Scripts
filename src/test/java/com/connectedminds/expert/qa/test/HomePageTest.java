@@ -20,7 +20,7 @@ public class HomePageTest extends TestBase {
 		initialization();
 		homePage = new HomePage();
 		loginPage = new LoginPage();
-		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		loginPage.loginPositive(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
 	@Test

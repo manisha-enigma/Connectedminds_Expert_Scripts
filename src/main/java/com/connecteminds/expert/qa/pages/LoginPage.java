@@ -6,85 +6,76 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.connectedminds.expert.qa.base.TestBase;
 
-public class LoginPage extends TestBase{
-	//Page Factory
-	@FindBy(id="email")
+public class LoginPage extends TestBase {
+	// Page Factory
+	@FindBy(id = "email")
 	WebElement username;
-	
-	@FindBy(id="password")
+
+	@FindBy(id = "password")
 	WebElement password;
-	
-	@FindBy(xpath="//span[normalize-space()='Login']")
-	WebElement login;
-		
-	@FindBy(xpath="//a[normalize-space()='Signup']")
+
+	@FindBy(xpath = "//span[normalize-space()='Login']")
+	WebElement loginButton;
+
+	@FindBy(xpath = "//a[normalize-space()='Signup']")
 	WebElement signup;
-	
-	@FindBy(xpath="//a[normalize-space()='Forgot Password?']")
+
+	@FindBy(xpath = "//a[normalize-space()='Forgot Password?']")
 	WebElement forgotPassword;
-	
-	@FindBy(xpath="//img[@alt='connectedminds-logo']")
+
+	@FindBy(xpath = "//img[@alt='connectedminds-logo']")
 	WebElement logo;
-	
-	@FindBy(css="div[class='MuiBox-root jss96'] span[class='MuiButton-label']")
+
+	@FindBy(css = "div[class='MuiBox-root jss96'] span[class='MuiButton-label']")
 	WebElement MDLogout;
-	
-	@FindBy(xpath="//span[normalize-space()='VERIFY']")
+
+	@FindBy(xpath = "//span[normalize-space()='VERIFY']")
 	WebElement OTPVerify;
-	
-	//Initializing Page Object
+
+	// Initializing Page Object
 	public LoginPage() {
-		PageFactory.initElements(driver,this);
+		PageFactory.initElements(driver, this);
 	}
-	
-	//Return page title
+
+	// Return page title
 	public String validateLoginPageTitle() {
 		return driver.getTitle();
 	}
-	
-	//Validating the Connectedminds Logo
+
+	// Validating the Connectedminds Logo
 	public Boolean validateLogo() {
 		return logo.isDisplayed();
 	}
-	
-	//Validating registration Functionality
+
+	// Validating registration Functionality
 	public RegistrationPage registration() {
 		signup.click();
 		return new RegistrationPage();
 	}
-	
-	//Validating Forgot Password Page is available
+
+	// Validating Forgot Password Page is available
 	public ForgotPassword checkForgotPassword() {
 		forgotPassword.click();
 		return new ForgotPassword();
 	}
-	
-	//Validating the Login Functionality
-	public HomePage login(String un, String pwd) throws InterruptedException {
+
+	// Validating the Login Functionality
+	public HomePage loginPositive(String un, String pwd) throws InterruptedException {
 		username.sendKeys(un);
 		password.sendKeys(pwd);
-		login.click();
-		//MDLogout.click();
+		loginButton.click();
+		// MDLogout.click();
 		Thread.sleep(30000);
 		OTPVerify.click();
 		return new HomePage();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	// Validating the Login Functionality Negative case
+	public HomePage loginNegative(String un, String pwd) throws InterruptedException {
+		username.sendKeys(un);
+		password.sendKeys(pwd);
+		loginButton.click();
+		return new HomePage();
+	}
+
 }

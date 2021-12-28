@@ -1,5 +1,6 @@
 package com.connectedminds.expert.qa.test;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -35,7 +36,15 @@ public class LoginPageTest extends TestBase{
 	
 	@Test
 	public void loginTest() throws Exception {
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		homePage = loginPage.loginPositive(prop.getProperty("username"), prop.getProperty("password"));
+	}
+	
+	@Test
+	public void loginNegativeTest() throws Exception {
+		homePage = loginPage.loginNegative(prop.getProperty("invalidUsername"), prop.getProperty("password"));
+		String act = driver.findElement(By.id("notistack-snackbar")).getText();
+		String exp = "No user data found to login, please check your provided details.";
+		Assert.assertEquals(act, exp);
 	}
 	
 	@AfterMethod
