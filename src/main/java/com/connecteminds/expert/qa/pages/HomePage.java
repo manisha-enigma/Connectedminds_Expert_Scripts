@@ -61,7 +61,7 @@ public class HomePage extends TestBase {
 
 	// Validating Course Page is available
 	public FeedsCourse CheckCoursePage() {
-		TrendingLink.click();
+		CoursesLink.click();
 		return new FeedsCourse();
 	}
 

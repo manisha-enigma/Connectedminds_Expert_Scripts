@@ -64,9 +64,6 @@ public class LoginPage extends TestBase {
 		username.sendKeys(un);
 		password.sendKeys(pwd);
 		loginButton.click();
-		// MDLogout.click();
-		Thread.sleep(30000);
-		OTPVerify.click();
 		return new HomePage();
 	}
 
